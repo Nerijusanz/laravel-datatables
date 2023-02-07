@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+   
     @yield('styles')
 </head>
 <body>
@@ -19,6 +19,7 @@
         <ul class="">
             <li><a href="{{ route('simple') }}">Simple Table</a></li>
             <li><a href="{{ route('datatable') }}">DataTable</a></li>
+            <li><a href="{{ route('datatable-ajax') }}">DataTable AJAX</a></li>
         </ul>
 
         @yield('content')
@@ -26,7 +27,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     @yield('javascripts')
 </body>

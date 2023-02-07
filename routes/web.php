@@ -16,3 +16,4 @@ use App\Http\Controllers\CustomerController;
 
 Route::get('/',[CustomerController::class, 'index'])->name('simple');
 Route::get('/datatable',[CustomerController::class, 'datatable'])->name('datatable');
+Route::get('/datatable-ajax',[CustomerController::class, 'datatableAjax'])->name('datatable-ajax');
