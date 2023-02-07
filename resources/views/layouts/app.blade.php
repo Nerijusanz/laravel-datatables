@@ -18,6 +18,7 @@
     <div id="app">
         <ul class="">
             <li><a href="{{ route('simple') }}">Simple Table</a></li>
+            <li><a href="{{ route('datatable') }}">DataTable</a></li>
         </ul>
 
         @yield('content')
@@ -26,7 +27,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     @yield('javascripts')
 </body>
 </html>

@@ -17,5 +17,12 @@ class CustomerController extends Controller
 
     }
 
+    public function datatable()
+    {
+        $customers = Customer::all();
+        
+        return view('customers.datatable', compact('customers'));
+    }
+
 
 }
