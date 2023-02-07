@@ -19,7 +19,7 @@ class CustomerApiController extends Controller
         return Datatables::of($data)->make(true);
 
 
-        //$customers = Customer::select('first_name', 'last_name', 'email')->get();
+        //$data = Customer::select('first_name', 'last_name', 'email')->get();
         //return response()->json($data);
         
 
