@@ -15,4 +15,4 @@ use App\Http\Controllers\CustomerController;
 */
 
 Route::get('/',[CustomerController::class, 'index'])->name('simple');
-
+Route::get('/datatable',[CustomerController::class, 'datatable'])->name('datatable');
