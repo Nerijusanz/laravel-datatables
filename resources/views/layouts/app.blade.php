@@ -16,6 +16,9 @@
 </head>
 <body>
     <div id="app">
+        <ul class="">
+            <li><a href="{{ route('simple') }}">Simple Table</a></li>
+        </ul>
 
         @yield('content')
 
